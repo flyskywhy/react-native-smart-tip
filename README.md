@@ -1,14 +1,14 @@
-# react-native-smart-tip
+# @flyskywhy/react-native-smart-tip
 React-native smart tip, including Toast、Modal、SnackBar
 
 ![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)
-[![npm](https://img.shields.io/npm/v/react-native-smart-tip.svg?style=flat)](https://npmjs.com/package/react-native-smart-tip)
+[![npm](https://img.shields.io/npm/v/@flyskywhy/react-native-smart-tip.svg?style=flat)](https://npmjs.com/package/@flyskywhy/react-native-smart-tip)
 
 ### 2021.4
 In react native >= 0.62, the new LogBox component would impact this component's initialization. To make it work we have to explicitly insert a mount point in your app like this
 
 ```
-import { WRootToastApp } from 'react-native-smart-tip'
+import { WRootToastApp } from '@flyskywhy/react-native-smart-tip'
 
 // in your entry file like `App.js`
 
@@ -20,7 +20,7 @@ return (
 
 ```
 
-### 2020.5 
+### 2020.5
 1. Add property isShowShadow to WSnackBar and WToast
 2. Add sliding hide function for WSnackBar
 
@@ -29,7 +29,7 @@ return (
 ![](https://user-gold-cdn.xitu.io/2020/3/8/170b855830588e41?w=300&h=500&f=gif&s=489177)
 
 ```
-import { ModalShowToastView } from 'react-native-smart-tip'
+import { ModalShowToastView } from '@flyskywhy/react-native-smart-tip'
 
 getToastInstance = (toastInstance) => {
     this.toastInstance = toastInstance;
@@ -49,37 +49,37 @@ this.toastInstance({data: 'toast'})
 
 ### Installation
 ```bash
-yarn add react-native-smart-tip
+yarn add @flyskywhy/react-native-smart-tip
 or
-npm i react-native-smart-tip --save 
+npm i @flyskywhy/react-native-smart-tip --save
 ```
 
-![](https://raw.githubusercontent.com/mochixuan/react-native-smart-tip/master/img/main.jpg)
+![](https://raw.githubusercontent.com/flyskywhy/react-native-smart-tip/master/img/main.jpg)
 
 ### Features
 
 ##### Toast
 
-![](https://github.com/mochixuan/react-native-smart-tip/blob/master/img/toast.gif?raw=true)
+![](https://github.com/flyskywhy/react-native-smart-tip/blob/master/img/toast.gif?raw=true)
 
 ##### SnackBar
-![](https://user-gold-cdn.xitu.io/2020/4/30/171c959272abe458?w=320&h=533&f=gif&s=355190)
+![](https://github.com/flyskywhy/react-native-smart-tip/blob/master/img/snackbar.gif?raw=true)
 
 ##### Modal
-![](https://github.com/mochixuan/react-native-smart-tip/blob/master/img/modal.gif?raw=true)
+![](https://github.com/flyskywhy/react-native-smart-tip/blob/master/img/modal.gif?raw=true)
 
-##### Show tips on Modal 
+##### Show tips on Modal
 > Tip: Modal shows that modal can only be used on Android [issue](https://github.com/facebook/react-native/issues/3445)
 
-![](https://github.com/mochixuan/react-native-smart-tip/blob/master/img/modal1.gif?raw=true)
+![](https://github.com/flyskywhy/react-native-smart-tip/blob/master/img/modal1.gif?raw=true)
 
 ### Usage
 
 ##### WToast
 ```
-import {WToast} from 'react-native-smart-tip'
+import {WToast} from '@flyskywhy/react-native-smart-tip'
 
-// Base 
+// Base
 show = () => {
 	WToast.show({data: 'hello world'})
 }
@@ -94,11 +94,9 @@ show = () => {
 	    position: WToast.position.TOP, // 1.TOP 2.CENTER 3.BOTTOM
 	    icon: <Image source={require('../data/img/success.png')} style={{width: 32,height: 32,resizeMode: 'contain'}}/>
 	}
-	
+
 	WToast.show(toastOpts)
 }
-
-WToast.hide(); // Can be hidden immediately
 
 ```
 ##### WToast API
@@ -116,9 +114,9 @@ isShowShadow | boolean | false | true | Shadow effect
 
 ##### WSnackBar
 ```
-import {WSnackBar} from 'react-native-smart-tip'
+import {WSnackBar} from '@flyskywhy/react-native-smart-tip'
 
-// Base 
+// Base
 show = () => {
 	WSnackBar.show({data: 'hello world'})
 }
@@ -137,7 +135,7 @@ show = () => {
 	    	// Click Action
 	    },
 	}
-	
+
 	WSnackBar.show(snackBarOpts)
 }
 
@@ -162,11 +160,11 @@ isShowShadow | boolean | false | true | Shadow effect
 numberOfLines|number| false | 1 | Maximum number of rows
 ---
 
-##### WModal 
+##### WModal
 ```
-import {WModal} from 'react-native-smart-tip'
+import {WModal} from '@flyskywhy/react-native-smart-tip'
 
-// Base 
+// Base
 show = () => {
 	WModal.show({data: 'hello world'})
 }
@@ -180,7 +178,7 @@ show = () => {
 	    position: WModal.position.CENTER,
 	    icon: <ActivityIndicator color='#fff' size={'large'}/>
 	}
-	
+
 	WModal.show(modalOpts)
 }
 
