@@ -20,6 +20,7 @@
     "Component",
     "ios",
     "android",
+    "web",
     "tip",
     "Notification"
   ],

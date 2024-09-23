@@ -1,8 +1,10 @@
 # @flyskywhy/react-native-smart-tip
-React-native smart tip, including Toast、Modal、SnackBar
+React-native smart tip, including Toast, Modal, SnackBar.
 
-![GitHub license](https://img.shields.io/badge/license-MIT-green.svg)
-[![npm](https://img.shields.io/npm/v/@flyskywhy/react-native-smart-tip.svg?style=flat)](https://npmjs.com/package/@flyskywhy/react-native-smart-tip)
+[![npm version](http://img.shields.io/npm/v/@flyskywhy/react-native-smart-tip.svg?style=flat-square)](https://npmjs.org/package/@flyskywhy/react-native-smart-tip "View this project on npm")
+[![npm downloads](http://img.shields.io/npm/dm/@flyskywhy/react-native-smart-tip.svg?style=flat-square)](https://npmjs.org/package/@flyskywhy/react-native-smart-tip "View this project on npm")
+[![npm licence](http://img.shields.io/npm/l/@flyskywhy/react-native-smart-tip.svg?style=flat-square)](https://npmjs.org/package/@flyskywhy/react-native-smart-tip "View this project on npm")
+[![Platform](https://img.shields.io/badge/platform-ios%20%7C%20android%20%7C%20web-989898.svg?style=flat-square)](https://npmjs.org/package/@flyskywhy/react-native-smart-tip "View this project on npm")
 
 ### 2021.4
 In react native >= 0.62, the new LogBox component would impact this component's initialization. To make it work we have to explicitly insert a mount point in your app like this
